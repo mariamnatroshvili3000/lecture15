@@ -17,3 +17,34 @@ for(var i= 0; i<cinema.films.lenght; i++){
     document.write(cinema.films.[i].name + "</br>")
     document.write(cinema.films.[i]. imdb rating + "</br>")
 }
+
+
+
+
+var user={}
+user.name="Doge"
+user.age=18,
+user.display= function () {
+    console.log(user.name);
+    console.log(user.age);
+}
+var hasNameProp = "name" in user;
+console.log(hasNameProp)
+
+ეს გადაამოწმებს ეს სახელი არსებობს თუ არა უკვე იუზერში
+
+
+
+
+ფუნქციის გაერთიანება ობიექტში-
+function createUser (pName, pAge) {
+    return{
+        name: pName,
+        age: pAge,
+        displayInfo : function() {
+            document.write("name"+ this.name + "age" + this.age);
+        }
+    }
+}
+var doge = createUser("Doge", 18);
+doge.displayInfo();
