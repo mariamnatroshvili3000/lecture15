@@ -1,21 +1,21 @@
 var cinema = {
     name: "Doges cinema",
     language: ["ქართული", "ინგლისური"],
-    adress: { st doge },
+    adress:  "stdoge" ,
     films: [ 
-        {name: "Black Adam", imdb rating :4.5 },
-        {name: "Halloween ends", imdb rating :4.5},
-        {name: "The invitation", imdb rating :4.5}
+        {name: "Black Adam", imdbrating :4.5 },
+        {name: "Halloween ends", imdbrating :4.5},
+        {name: "The invitation", imdbrating :4.5}
     ]
 }
 document.write("<h3> Doges cinema-ს ოფიციალური ენაა </h>")
-for (var i=0; i<= cinema.language.lenght; i++) {
+for (var i=0; i<= cinema.language.length; i++) {
     document.write(cinema.language[i] + "</br>" )
 }
 document.write("<h3> Doges cinema-ს ფილმები</h>")
-for(var i= 0; i<cinema.films.lenght; i++){
-    document.write(cinema.films.[i].name + "</br>")
-    document.write(cinema.films.[i]. imdb rating + "</br>")
+for(var i= 0; i<cinema.films.length; i++){
+    document.write(cinema.films[i].name + "</br>")
+    document.write(cinema.films[i].imdbrating + "</br>")
 }
 
 
